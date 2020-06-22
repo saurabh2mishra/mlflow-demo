@@ -98,3 +98,5 @@ offlinenotebooks
 offline_notebooks
 pictures
 certificates/
+.trash
+mlruns
