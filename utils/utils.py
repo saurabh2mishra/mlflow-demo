@@ -9,7 +9,7 @@ def create_roc_plot(fpr, tpr):
     Create ROC curve.
     :param fpr: false positive.
     :param tpr: true positive.
-    :return: None.
+    :return: returns a tuple of plt, fig, ax
     """
     fig, ax = plt.subplots()
     plt.plot(fpr, tpr, color='orange', label='ROC')
@@ -28,12 +28,12 @@ def plot_confusion_matrix(y_true, y_pred, classes,
     """
     This function prints and plots the confusion matrix.
     :param y_true: the actual value of y
-    :param y_pred: the predicted valuye of y
+    :param y_pred: the predicted value of y
     :param classes: list of label classes to be predicted
     :param normalize: normalize the data
     :param title: title of the plot for confusion matrix
     :param cmap: color of plot
-    :return: returns a tuple of (plt, fig, ax)
+    :return: returns a tuple of plt, fig, ax
     """
 
     if not title:
