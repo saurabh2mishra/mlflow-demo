@@ -105,7 +105,7 @@ class KerasModel:
             plot_file = "roc-auc-plot.png"
             print("**************************************")
             print(y_test, y_probs.ravel(), type(y_test), type(y_probs))
-            probs = y_probs.ravel()  # [:, 1]
+            probs = y_probs.ravel()
             fpr, tpr, thresholds = roc_curve(y_test, probs)
             plt_roc, fig_roc, ax_roc = utils.create_roc_plot(fpr, tpr)
             fig_roc.savefig(plot_file)

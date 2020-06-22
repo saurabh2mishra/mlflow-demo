@@ -1,5 +1,3 @@
-import mlflow
-
 from models.prediction import TreeModel
 
 max_depths = [5, 8, 10]
@@ -10,4 +8,3 @@ if __name__ == '__main__':
         exp_id, run_id = dtc.mlflow_run()
         print(f"MLflow Run completed with run_id {exp_id} and experiment_id {run_id}")
         print("<->" * 40)
-

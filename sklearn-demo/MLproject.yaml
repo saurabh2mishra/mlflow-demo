@@ -2,7 +2,7 @@ name: sklearn-demo
 conda_env: conda.yaml
 
 entry_points:
-  model_run:
+  main:
     parameters:
       max_depth: int
       max_leaf_nodes: {type: int, default: 32}
