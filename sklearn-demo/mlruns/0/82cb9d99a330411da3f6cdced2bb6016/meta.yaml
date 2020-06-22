@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/C56811/PycharmProjects/mlflow-demo/sklearn-demo/mlruns/0/82cb9d99a330411da3f6cdced2bb6016/artifacts
+end_time: 1592583380208
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 82cb9d99a330411da3f6cdced2bb6016
+run_uuid: 82cb9d99a330411da3f6cdced2bb6016
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1592583379342
+status: 3
+tags: []
+user_id: C56811

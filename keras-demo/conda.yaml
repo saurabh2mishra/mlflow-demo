@@ -1,0 +1,12 @@
+name: keras-demo
+channels:
+  - defaults
+dependencies:
+- python=3.6.5
+- pip
+- pip:
+  - mlflow
+  - keras==2.3.1
+  - tensorflow==2.2.0
+
+

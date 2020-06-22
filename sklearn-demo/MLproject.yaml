@@ -1,0 +1,11 @@
+name: sklearn-demo
+conda_env: conda.yaml
+
+entry_points:
+  model_run:
+    parameters:
+      max_depth: int
+      max_leaf_nodes: {type: int, default: 32}
+      model_name: {type: string, default: "tree-classification" }
+      run_origin: {type: string, default: "default" }
+    command: "python model_run.py -r {max_depth} {max_leaf_nodes} {model_name}"
