@@ -5,7 +5,6 @@ from sklearn import metrics
 from sklearn.datasets import load_breast_cancer
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score, precision_score, roc_curve
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
 from sklearn.tree import DecisionTreeClassifier
 
 from utils import utils
@@ -65,11 +64,6 @@ class TreeModel:
                                                                 self.data.target,
                                                                 test_size=0.25,
                                                                 random_state=23)
-
-            # Feature Scaling
-            sc = StandardScaler()
-            X_train = sc.fit_transform(X_train)
-            X_test = sc.transform(X_test)
 
             # train and predict
             self._decision_tree.fit(X_train, y_train)
